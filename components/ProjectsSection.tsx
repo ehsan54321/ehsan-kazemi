@@ -1,40 +1,40 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import SlideUp from "./SlideUp";
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
+import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import SlideUp from './SlideUp'
+import { BsGithub, BsArrowUpRightSquare } from 'react-icons/bs'
 
 type Projects = {
-  name: string;
-  description: string;
-  image: string;
-  package?: string;
-  github?: string;
-  link?: string;
-};
+  name: string
+  description: string
+  image: string
+  package?: string
+  github?: string
+  link?: string
+}
 const projects: Array<Projects> = [
   {
-    name: "Marxket",
+    name: 'Marxket',
     description:
       "I don't have a job history, but I have a very complete project on the web, which is equivalent to a complete site about digital currencies.",
     package:
-      "React.js,Next.js,Next.js API route,TailwindCSS,Chart.js,Scss,TypeScript,PWA",
-    image: "/marx.png",
-    link: "https://marx.iran.liara.run",
+      'React.js,Next.js,Next.js API route,TailwindCSS,Chart.js,Scss,TypeScript,PWA',
+    image: '/marx.png',
+    link: 'https://marx.iran.liara.run',
   },
   {
-    name: "Abjad",
-    description: "Convert alphabet letters to Abjad.",
-    image: "/abjad.png",
-    package: "React.js,Vite.js,TailwindCSS,TypeScript",
+    name: 'Abjad',
+    description: 'Convert alphabet letters to Abjad.',
+    image: '/abjad.png',
+    package: 'React.js,Vite.js,TailwindCSS,TypeScript',
   },
   {
-    name: "Fa Date",
+    name: 'Fa Date',
     description: "today's date.",
-    image: "/in-date.png",
-    package: "Vite.js,TypeScript,PWA",
+    image: '/in-date.png',
+    package: 'Vite.js,TypeScript,PWA',
   },
-];
+]
 
 const ProjectsSection = () => {
   return (
@@ -92,7 +92,7 @@ const ProjectsSection = () => {
                 </div>
                 <div className="flex items-start flex-wrap mt-3">
                   {project.package &&
-                    project.package.split(",").map((skill) => (
+                    project.package.split(',').map((skill) => (
                       <p
                         key={skill}
                         className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
@@ -103,11 +103,11 @@ const ProjectsSection = () => {
                 </div>
               </SlideUp>
             </div>
-          );
+          )
         })}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ProjectsSection;
+export default ProjectsSection

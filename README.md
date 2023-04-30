@@ -12,7 +12,9 @@ Can run the application in VS Code or a terminal and it will be available at `ht
 yarn install
 yarn dev
 ```
+
 or
+
 ```bash
 npm install
 npm run dev

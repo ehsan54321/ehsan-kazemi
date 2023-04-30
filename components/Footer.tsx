@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import {
   AiOutlineGithub,
   AiOutlineTwitter,
@@ -6,7 +6,7 @@ import {
   AiOutlineYoutube,
   AiFillPhone,
   AiOutlineMail,
-} from "react-icons/ai"
+} from 'react-icons/ai'
 
 const Footer = () => {
   return (
@@ -33,7 +33,11 @@ const Footer = () => {
               size={30}
             />
           </a>
-          <a href="mailto:ehsan.2009.12@gmail.com" rel="noreferrer nofollow" target="_blank">
+          <a
+            href="mailto:ehsan.2009.12@gmail.com"
+            rel="noreferrer nofollow"
+            target="_blank"
+          >
             <AiOutlineMail
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
               size={30}
@@ -62,7 +66,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
+  )
 }
 
 export default Footer

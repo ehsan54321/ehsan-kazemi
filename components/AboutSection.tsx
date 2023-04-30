@@ -1,19 +1,19 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 const skills = [
-  { skill: "HTML, CSS", width: "98%" },
-  { skill: "JavaScript, TypeScript", width: "75%" },
-  { skill: "Python", width: "80%" },
-  { skill: "React, Next.js", width: "90%" },
-  { skill: "Tailwind CSS", width: "90%" },
-  { skill: "Git", width: "60%" },
-  { skill: "GitHub", width: "40%" },
-  { skill: "SASS", width: "85%" },
-  { skill: "CssFlex", width: "99%" },
-  { skill: "CssGird", width: "70%" },
-  { skill: "Regular Expressions (RegExp)", width: "40%" },
-  { skill: "Search Engine Optimization (SEO)", width: "60%" },
-];
+  { skill: 'HTML, CSS', width: '98%' },
+  { skill: 'JavaScript, TypeScript', width: '75%' },
+  { skill: 'Python', width: '80%' },
+  { skill: 'React, Next.js', width: '90%' },
+  { skill: 'Tailwind CSS', width: '90%' },
+  { skill: 'Git', width: '60%' },
+  { skill: 'GitHub', width: '40%' },
+  { skill: 'SASS', width: '85%' },
+  { skill: 'CssFlex', width: '99%' },
+  { skill: 'CssGird', width: '70%' },
+  { skill: 'Regular Expressions (RegExp)', width: '40%' },
+  { skill: 'Search Engine Optimization (SEO)', width: '60%' },
+]
 
 const AboutSection = () => {
   return (
@@ -43,10 +43,10 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              I believe that you should{" "}
+              I believe that you should{' '}
               <span className="font-bold text-teal-500">
                 never stop growing
-              </span>{" "}
+              </span>{' '}
               and that&#39;s what I strive to do, I have a passion for
               technology and a desire to always push the limits of what is
               possible. I am excited to see where my career takes me and am
@@ -92,7 +92,7 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default AboutSection;
+export default AboutSection

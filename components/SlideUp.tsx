@@ -1,12 +1,12 @@
-"use client" // this is a client component
-import React, { useEffect, useRef, ReactNode } from "react"
+'use client' // this is a client component
+import React, { useEffect, useRef, ReactNode } from 'react'
 interface Props {
   offset?: string
   children?: ReactNode
   // any props that come into the component
 }
 
-export default function SlideUp({ children, offset = "0px" }: Props) {
+const SlideUp = ({ children, offset = '0px' }: Props) => {
   const ref = useRef(null)
 
   useEffect(() => {
@@ -14,8 +14,8 @@ export default function SlideUp({ children, offset = "0px" }: Props) {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.remove("opacity-0")
-            entry.target.classList.add("animate-slideUpCubiBezier")
+            entry.target.classList.remove('opacity-0')
+            entry.target.classList.add('animate-slideUpCubiBezier')
           }
         })
       },
@@ -33,3 +33,5 @@ export default function SlideUp({ children, offset = "0px" }: Props) {
     </div>
   )
 }
+
+export default SlideUp

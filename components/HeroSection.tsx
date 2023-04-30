@@ -1,8 +1,9 @@
-"use client"; // this is a client component
-import React from "react"
-import Image from "next/image"
-import { Link } from "react-scroll/modules"
-import { HiArrowDown } from "react-icons/hi"
+'use client' // this is a client component
+import Image from 'next/image'
+import React from 'react'
+import Typewriter from 'typewriter-effect'
+import { HiArrowDown } from 'react-icons/hi'
+import { Link } from 'react-scroll/modules'
 
 const HeroSection = () => {
   return (
@@ -19,12 +20,24 @@ const HeroSection = () => {
         </div>
         <div className="md:mt-2 md:w-3/5">
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">
-            Hi, I&#39;m Ehsan!
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString('Welcome You!')
+                  .pauseFor(800)
+                  .deleteAll()
+                  .typeString("I'm Ehsan Kazemi!")
+                  .pauseFor(1200)
+                  // &#39;
+                  .start()
+              }}
+              options={{ loop: true }}
+            />
           </h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
-            I&#39;m a{" "}
+            I&#39;m a{' '}
             <span className="font-semibold text-teal-600">
-              Software Engineer{" "}
+              Software Engineer{' '}
             </span>
             based in Isfahan Province, Iran. Working towards creating software
             that makes life easier and more meaningful.
@@ -55,7 +68,7 @@ const HeroSection = () => {
         </Link>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection
