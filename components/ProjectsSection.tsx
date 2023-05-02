@@ -23,14 +23,14 @@ const projects: Array<Projects> = [
       'React.js,Next.js,Next.js API route,TailwindCSS,Chart.js,Scss,TypeScript,PWA',
     image: '/marx.png',
     link: 'https://marx.iran.liara.run',
-    aos: 'fade-right',
+    aos: 'zoom-in',
   },
   {
     name: 'Abjad',
     description: 'Convert alphabet letters to Abjad.',
     image: '/abjad.png',
     package: 'React.js,Vite.js,TailwindCSS,TypeScript',
-    aos: 'fadeo-left',
+    aos: 'flip-up',
   },
   {
     name: 'Fa Date',

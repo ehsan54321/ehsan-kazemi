@@ -24,10 +24,10 @@ const HeroSection = () => {
               onInit={(typewriter) => {
                 typewriter
                   .typeString('Welcome You!')
-                  .pauseFor(800)
+                  .pauseFor(1000)
                   .deleteAll()
                   .typeString("I'm Ehsan Kazemi!")
-                  .pauseFor(1200)
+                  .pauseFor(3000)
                   // &#39;
                   .start()
               }}
