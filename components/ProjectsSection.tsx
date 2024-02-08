@@ -22,14 +22,25 @@ const projects: Array<Projects> = [
     package:
       'React.js,Next.js,Next.js API route,TailwindCSS,Chart.js,Scss,TypeScript,PWA',
     image: '/marx.png',
-    link: 'https://marx.iran.liara.run',
+    link: 'https://marx.liara.run',
+    github: 'https://github.com/ehsan54321/marx',
     aos: 'zoom-in',
+  },
+  {
+    name: 'This project',
+    description: 'My CV.',
+    image: '/this.png',
+    package: 'React.js,Next.jsTailwindCSS,TypeScript',
+    link: 'http://ehsan-kazemi.ir',
+    github: 'https://github.com/ehsan54321/ehsan-kazemi',
+    aos: 'flip-down',
   },
   {
     name: 'Abjad',
     description: 'Convert alphabet letters to Abjad.',
     image: '/abjad.png',
     package: 'React.js,Vite.js,TailwindCSS,TypeScript',
+    github: 'Number to Abjad',
     aos: 'flip-up',
   },
   {
@@ -37,6 +48,7 @@ const projects: Array<Projects> = [
     description: "today's date.",
     image: '/in-date.png',
     package: 'Vite.js,TypeScript,PWA',
+    github: 'https://github.com/ehsan54321/fa-date',
     aos: 'fade-up',
   },
 ]
